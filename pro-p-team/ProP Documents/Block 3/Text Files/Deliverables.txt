@@ -1,0 +1,8 @@
+Apps:
+- An application to be used at the entrance of the event.
+- An application to be used at the entrance of the camping.
+- An application to be used at the shops.
+- An application to be used at the stand, where you can loan materials.
+- An application to be used when a visitor leaves the event.
+- An application for the organization to inspect the status of the event.
+- An application to convert the information in the PayPal-text-file to the database.

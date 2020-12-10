@@ -1,0 +1,12 @@
+website:
+homepage make it with video better
+forms
+login
+register
+
+setup document:
+
+
+-database design
+
+-uml designs 

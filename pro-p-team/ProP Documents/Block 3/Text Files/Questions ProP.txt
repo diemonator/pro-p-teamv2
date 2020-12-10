@@ -1,0 +1,20 @@
+1. Is it madetory for a client to have a registration before entring the Event.
+1.2 if there is a registration on the spot
+1.3 Do we have to submit live statistics or after the event.
+1.4 If u sign up for live registration do they sign up you through the site on spot or different way.
+1.5 If the user chipcard is connected to the useracc will he have a special number that references his RFID
+1.6 Will the user get a number for his registration for him to be checked on the entrence of the event.
+1.7 what is that machine in the event.
+1.8 will machine it eat cash or credit cards.
+1.9 Can a user register without paying his ticket.
+2 what information do we have to get form the client on registration.
+2.1 Adition requirement(information) for the camping site.
+2.2 The registration for the camping event is made by the site for it can be dont also on the spot.
+2.3 Is the cost of the camp reservation added to the account of the client that has made registration for the camp or he can add a friend bank acount to pay.
+2.4 IF there are children at the event do they have a ticket and be counted as partisipents int he event.
+2.5 are there going to be group discounts for large orders and what are they?
+2.6 what are the deadlines for the project submission.
+2.7 More questions after we make the database diagram - minimum and maximun cards, etc....
+
+12:45
+Where do we upload the datebase?

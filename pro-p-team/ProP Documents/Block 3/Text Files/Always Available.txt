@@ -1,0 +1,21 @@
+Always possible
+The organisation made a deal with PayPal.
+At certain moments PayPal will deliver a logfile (a textfile) to the organisation of the event with
+information about the deposits during the last period of time.
+PayPal will place terminals on the terrain, so the visitor can transfer money from his/her bank
+account to his/her event-account. The software for the terminals will be delivered by PayPal.
+It is your task to transfer the information in these text-files to the database. You can see an
+example of such a text-file in appendix B.
+The organization should always have the possibility to see the status of the system, like:
+- What is the current status of a certain visitor?
+- The history of a certain visitor (like: did he pay the entrance price; for how much money did
+he order food; how much money in total did he transfer to his event-account?)
+- How many visitors will visit the event?
+- How many visitors are yet visiting the event?
+- How many visitors have left the event?
+- How much is the total balance of all event-accounts together?
+- How much money did they pay in total?
+- How much visitors booked a camping spot and for how much money?
+- Which camping spots are free?
+- For how much money did we sell in a certain shop?
+- How many units of a certain article are sold?

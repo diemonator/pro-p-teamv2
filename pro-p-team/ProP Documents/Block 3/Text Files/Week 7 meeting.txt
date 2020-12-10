@@ -1,0 +1,16 @@
+Week 7: 2.15-2.40
+
+Website was good except a few missing pages
+Missing/Changes:
+1. account page
+2. somewhere you can top up your paypal money
+3. Upload to IRIS
+
+Database:
+Missing/Changes:
+Transaction not really needed
+
+
+Apps:
+Nada
+

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8F959AC-7913-42F6-A2F3-27D956DAEE81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BearWithMeLibs">
+      <HintPath>..\..\..\Libs\DB\BearWithMeLibs.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\..\Libs\DB\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="Phidget21.NET, Version=2.1.8.244, Culture=neutral, PublicKeyToken=c2b1f2a3594bce52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libs\RFID\Phidget21.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.cs" />
+    <Compile Include="GeneratorDrinks.cs" />
+    <Compile Include="ResizeTimer.cs" />
+    <Compile Include="Resources\Decorations\Apple.cs" />
+    <Compile Include="Resources\Decorations\Apricot.cs" />
+    <Compile Include="Resources\Decorations\Banana.cs" />
+    <Compile Include="Resources\Decorations\BearDark.cs" />
+    <Compile Include="Resources\Decorations\BeerAmber.cs" />
+    <Compile Include="Resources\Decorations\BeerBrown.cs" />
+    <Compile Include="Resources\Decorations\BeerCream.cs" />
+    <Compile Include="Resources\Decorations\BeerLagers.cs" />
+    <Compile Include="Resources\Decorations\BeerMalts.cs" />
+    <Compile Include="Resources\Decorations\Carbonation.cs" />
+    <Compile Include="Resources\Decorations\Cherry.cs" />
+    <Compile Include="Resources\Decorations\Clementine.cs" />
+    <Compile Include="Resources\Decorations\CocaColaLife.cs" />
+    <Compile Include="Resources\Decorations\CocacolaLight.cs" />
+    <Compile Include="Resources\Decorations\CocaColaZero.cs" />
+    <Compile Include="Resources\Decorations\CoffeeAmericano.cs" />
+    <Compile Include="Resources\Decorations\CoffeeBlack.cs" />
+    <Compile Include="Resources\Decorations\CoffeeCappuccino.cs" />
+    <Compile Include="Resources\Decorations\CoffeeDryCappuccino.cs" />
+    <Compile Include="Resources\Decorations\CoffeeEspresso.cs" />
+    <Compile Include="Resources\Decorations\CoffeeFrappe.cs" />
+    <Compile Include="Resources\Decorations\CoffeeLatte.cs" />
+    <Compile Include="Resources\Decorations\CoffeeMacchiato.cs" />
+    <Compile Include="Resources\Decorations\CoffeeMocha.cs" />
+    <Compile Include="Resources\Decorations\CoffeeWhite.cs" />
+    <Compile Include="Decorator.cs" />
+    <Compile Include="Generator.cs" />
+    <Compile Include="Resources\Decorations\Grape.cs" />
+    <Compile Include="Resources\Decorations\Kiwi.cs" />
+    <Compile Include="Resources\Decorations\Mango.cs" />
+    <Compile Include="Resources\Decorations\Olive.cs" />
+    <Compile Include="Resources\Decorations\Orange.cs" />
+    <Compile Include="Resources\Decorations\PepsiSummerChill.cs" />
+    <Compile Include="Resources\Decorations\PepsiTwist.cs" />
+    <Compile Include="Resources\Decorations\PepsiWhite.cs" />
+    <Compile Include="Resources\Decorations\Pineapple.cs" />
+    <Compile Include="Resources\FoodDecorator\Bacon.cs" />
+    <Compile Include="Resources\FoodDecorator\Cheese.cs" />
+    <Compile Include="Resources\FoodDecorator\Chicken.cs" />
+    <Compile Include="Resources\FoodDecorator\Choriso.cs" />
+    <Compile Include="Resources\FoodDecorator\Eggs.cs" />
+    <Compile Include="Resources\FoodDecorator\Fries.cs" />
+    <Compile Include="Resources\FoodDecorator\Garlick.cs" />
+    <Compile Include="Resources\FoodDecorator\Unien.cs" />
+    <Compile Include="Resources\Food\Burger.cs" />
+    <Compile Include="Resources\Food\Pizza.cs" />
+    <Compile Include="Resources\Food\Sandwitch.cs" />
+    <Compile Include="Resources\Food\Snacks.cs" />
+    <Compile Include="Resources\Sugar.cs" />
+    <Compile Include="Resources\Drinks\Bear.cs" />
+    <Compile Include="Resources\Drinks\Coffie.cs" />
+    <Compile Include="Resources\Drinks\Cola.cs" />
+    <Compile Include="Resources\Drinks\Juice.cs" />
+    <Compile Include="Resources\Drinks\Peps.cs" />
+    <Compile Include="Resources\Drinks\Rakia.cs" />
+    <Compile Include="Resources\Drinks\Smoothy.cs" />
+    <Compile Include="Resources\Drinks\Soda.cs" />
+    <Compile Include="Resources\Drinks\Tea.cs" />
+    <Compile Include="Resources\Drinks\Vodka.cs" />
+    <Compile Include="Resources\Drinks\Water.cs" />
+    <Compile Include="Resources\Drinks\Whisky.cs" />
+    <Compile Include="FStandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStandForm.Designer.cs">
+      <DependentUpon>FStandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IProduct.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderUI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FStandForm.resx">
+      <DependentUpon>FStandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smallLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="phidget21.dll" />
+    <Content Include="Phidget21COM.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

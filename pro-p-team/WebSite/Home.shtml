@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/optimizedVisual.css">
+      <script src="JavaScript\AnimationMarto.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <style> @media print {#ghostery-purple-box {display:none !important}} </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <video class="videostyle" muted autoplay loop>
+          <source src="Images/Firewatch Ambience.mp4" >
+          <source src="Images/Firewatch Ambience.webm" >
+          <p class="warning">Your browser does not support HTML5 video.</p>
+      </video>
+
+      <header>
+          <a href="LogIn.php"><img class="login" src="Images\lmao.png" alt="Images\lmao.png"></a>
+
+          <a href="Register.php"><img class="reg" src="Images\vcvc.png" alt="Images\vcvc.png"></a>
+
+          <a href="index.html"><img class="navImage" src="Images\bearWithMeLogo.png" alt=".!."></a>
+      </header>
+
+      <nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a class="hiden" href="Events.html"> Events</a></li>
+          <li class="center"><a class="special" href="Events.html">
+              <img class="navCenterImage1" src="Images\dsadasda.png" alt="Images\dsadasda.png">
+              <img class="navCenterImage2" src="Images\dasdas.png"/>
+              <img class="navCenterImage3" src="Images\fdgdgdsg.png" alt="Images\fdgdgdsg.png"></a></li>
+          <li><a href="About us.html">About us</a></li>
+          <li><a href="Contact.php">Contact</a></li>
+      </nav>
+
+      <nav class="mobile">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Events.html"> Events</a></li>
+              <li><a href="About us.html">About us</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+      </nav>
+
+      <img class="oasis" src="Images\oasisLogo.png" alt="Images\fdgdgdsg.png">
+
+      <footer class="homeFoot">
+        <p>Site By Bear With Me Copyright (c) 2016 Copyright Holder All Rights Reserved</p>
+      </footer>
+
+    </body>
+</html>

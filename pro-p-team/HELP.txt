@@ -1,0 +1,358 @@
+Project P-phase
+Student workbook
+Version 2015.1
+January 2015
+Bert van Gestel
+Marielle Fransen
+ProP, Student workbook page 2
+Project ProP: a system for organizing a social event
+Introduction
+In period 3 and 4 of your first year at Fontys ICT you will work on a system for a company, which
+organizes events. You might think of events, like a lan-party, a pop festival, a market, or
+whatever. Use your own imagination as a group to create your own events based on the
+requirements set further in this document. The idea is that people can visit the website of a
+certain event, even long time before the event takes place, to get information about the event
+and to make reservations.
+When the event takes place, the organization should have the ability to check if a visitor has
+paid. During the event persons might like to sleep in their tent on the camping ground, so it
+should be possible to make a reservation for a camping pitch on the camping ground.
+It should be possible to assign some kind of identification to visitor, for instance a barcode, QRcode or an arm brace with an RFID-chip in it. What exactly is not clear to the organizing
+company. Maybe you can help in finding out which kind of identification is suitable. This kind of
+identification should make it possible to pay for food and drinks, so a visitor does not need to
+carry money during the event.
+The required and chosen hardware is limited available at ISSD at Fontys.
+Objective
+You have learned some techniques on steering a project, the project deliverables and basic
+programming. The objective of the ProP is to integrate your learned knowledge into a project
+with described deliverables. To use your imagination and freedom to build the best product for
+the customer. And further to learn to work together with different disciplines and experience
+the dynamics in a project environment instead of executing assignments on your own.
+You need to provide some deliverables like a specification of the requirements, a website, a
+design and implementation of a database and some applications. At the end you will give a
+presentation about the project.
+Who is allowed to join this project?
+You are allowed to join this project, if you received permission from the exam board.
+Way of working
+In the first lesson groups of 4 students are formed and every group will get a tutor (coach).
+Students may do a proposal for who is in the group, but try to use a mix of students, this will
+thrive the benefit in the project. Every week there is a meeting with your tutor and in some 
+ProP, Student workbook page 3
+weeks there are classical lessons. In the schedule you can see what you have to deliver and
+when. In the last week every group will do a presentation for an audience, which are some
+tutors and the other students.
+The presentation must be done by all members of the group!
+Assessment
+In this project you will get marks for sub-deliverables and for the way you work in the group.
+Your final mark is a weighted average of these sub-marks. Every student gets an individual
+mark. The final mark is a multiple of 0.5 (so it could be a 6 or a 6.5 or a 7or a 7.5 or . . .).
+Since this project leans very hard on group-work, you should be there on every scheduled
+moment.
+The first time you miss a meeting and you do not have a good reason, you get a warning.
+Consequence is that your final mark will first be calculated as mentioned further in this
+document, and then be lowered by 1 point (out of 10).
+The second time you miss a scheduled moment without a good reason, you are no longer
+welcome in the group: you must leave the group. In this case your final mark will be a 1.
+About the assignment
+Your company has got the assignment to deliver a system for a social media event. This is a
+meeting for young people on a big terrain (area, field), where they will place tents for musicians
+and work-shops, sell foods and drinks, have a place where visitors can loan materials, and some
+more.
+On the terrain there is a network for modern digital communication, so it is possible to install
+databases and use them in applications. May be you can set up a service like FaceBook, Twitter
+or LinkedIn, so the visitors of the event can share information.
+On the terrain there is a pc-doctor who can help young visitors if they have problems with their
+laptop.
+The event starts on Friday-evening and last the whole weekend. The event takes place nearby
+camping "Park Kuierpad" (see appendix A for a map of the camping). It should be possible to
+make a reservation for a camping spot on the camping ground.
+Before the event
+Before the event takes place people can visit a website. On this website they can find
+information about the event and it should be possible to make a reservation.
+Every participant gets a unique identity number and a so called "event-account". This eventaccount is identified by the unique identity number.
+ProP, Student workbook page 4
+The entrance price for the event is 55 euro. The participant will get some kind of identification,
+for instance an arm brace with an RFID-chip, containing a unique identity number. This arm
+brace will be used at the entrance to check if the participant is allowed to enter the event.
+During the event the participant can use the arm brace to pay for food or drinks, etc. Or a
+participant gets ia unique identity number by e-mail. So if a visitor has made a reservation,
+he/she gets a confirmation e-mail with some information (as its name, date of reservation,
+his/her unique identity number, asking him/her to deposit some money to the bank account of
+the organiser of the event).
+Everyone, who makes a reservation for the event, should transfer an amount of money to the
+bank account of the organisation of the event. The company sets the balance of its eventaccount to his/her payment (minus the entrance price of course).
+A group of participants can book a camping spot by choosing a free spot on the map of the
+camping. Every spot can be booked for at most 6 persons.
+To make a reservation for a camping spot you should specify all participants and specify which
+one of them will get the bill. You can only make a reservation for the whole weekend; not for a
+single day. The price for a reservation for a camping spot is 30 euro plus 20 euro for every
+guest.
+During the event
+At the entrance of the event there should be the possibility to check quickly if a visitor is
+allowed to enter the event. If the visitor did not pay or did not pay enough, he/she should get
+the possibility to pay. The payment, minus the entrance fee and minus 10 euro extra (to
+encourage paying in advance) is added to its event-account.
+At the entrance of the camping area the system checks if the bill for the visitor's group is paid.
+During the event it is not possible to pay cash: only by event-account.
+On the terrain there are several stands where you can buy foods or drinks. For the pay desk we
+need an application to generate a sales receipt, check the unique identity number and lower
+the balance of the event-account of the visitor by the amount of the sales receipt.
+Sometimes you want so badly join your friends at the event, you forget in a hurry some stuff
+(like a USB-cable, your camera, a charger for your laptop). There is a stand, where you can hire
+some material. Of course, you have to pay for it and, not surprisingly, we use your eventaccount to register the hired material and to pay for the rent.
+It would be nice if the visitors of the event have the possibility to communicate about their
+experiences, so we would like to have something like Facebook, LinkedIn or Twitter. It should 
+ProP, Student workbook page 5
+be possible for visitors to place tweeds or something like that on the website. But placing
+tweets should only be possible for visitors.
+At the end of the event
+When a visitor leaves the event it must be possible to check the balance of its event-account.
+The fellow worker can return the money to the visitor and mark this event-account as not valid
+anymore. Do not forget to check if the visitor has hired some material but forgot to return it.
+Always possible
+The organisation made a deal with PayPal.
+At certain moments PayPal will deliver a logfile (a textfile) to the organisation of the event with
+information about the deposits during the last period of time.
+PayPal will place terminals on the terrain, so the visitor can transfer money from his/her bank
+account to his/her event-account. The software for the terminals will be delivered by PayPal.
+It is your task to transfer the information in these text-files to the database. You can see an
+example of such a text-file in appendix B.
+The organization should always have the possibility to see the status of the system, like:
+ What is the current status of a certain visitor?
+ The history of a certain visitor (like: did he pay the entrance price; for how much money did
+he order food; how much money in total did he transfer to his event-account?)
+ How many visitors will visit the event?
+ How many visitors are yet visiting the event?
+ How many visitors have left the event?
+ How much is the total balance of all event-accounts together?
+ How much money did they pay in total?
+ How much visitors booked a camping spot and for how much money?
+ Which camping spots are free?
+ For how much money did we sell in a certain shop?
+ How many units of a certain article are sold?
+Deliverables
+ A name (and a logo) for your group.
+ A project plan.
+ Agenda's and minutes of every meeting.
+ A setup-document (see appendix C).
+ A website.
+ProP, Student workbook page 6
+ A design for a database.
+ An application to be used at the entrance of the event.
+ An application to be used at the entrance of the camping.
+ An application to be used at the shops.
+ An application to be used at the stand, where you can loan materials.
+ An application to be used when a visitor leaves the event.
+ An application for the organization to inspect the status of the event.
+ An application to convert the information in the PayPal-text-file to the database.
+ A presentation about the project.
+ A process report, (see appendix D).
+Some requirements
+1. The website should run on the Athena server of Fontys ICT. You should use html, css,
+JavaScript and/or php. First you make version 1 of the website. This is done in html and css.
+Later you have to deliver version 2, which has the possibility to make reservations. For this
+you need to use php.
+The last version (version 3) makes it possible to place tweets during the event.
+2. The database could be an Oracle database or a MySQL database.
+3. Windows applications should be programmed in an object oriented language, like C#, Java
+or C++. They should be object oriented as much as possible. Every class and every member
+of a class should be specified.
+4. Every deliverable should have a first page. On this page should be the name of your group,
+the names of the group members, the title of the deliverable, the status and a version
+number.
+5. Every week there is a meeting with the group members and the tutor. There should be an
+agenda and you should make minutes of every meeting. The agenda should be distributed
+at last one working day before the meeting. Minutes should be distributed al last one
+working day after the meeting.
+Simple time schedule
+Week 1 of first block:
+Introduction. Visit the kick-off-meeting, read this paper and think of a name and logo for your
+group. Make a start with the project plan. Make a start with the setup-document.
+Prepare an interview with the client.
+Week 2 to 7:
+Finish the project plan (should be pretty concrete for the weeks in the first block and might be
+global for the weeks in the second block.
+ProP, Student workbook page 7
+Investigate what kind of identification, like a barcode, QR-code or an arm brace with an RFIDchip, are suitable for this kind of project.
+Work on website version 1.
+Make a design for the database, choose which dbms to use (Oracle, MySQL?) and implement
+the database.
+Make gui-designs for the applications. Describe the classes you will use.
+Week 7: deliver a setup-document.
+Week 8, 9: exam time.
+Week 11 to 17 (second block):
+Work on website version 2 and 3.
+Eventually modify the database.
+Work on the applications.
+Week 18,19: exam time.
+Week 19:
+Deliver all deliverables.
+Give a presentation for the colleague-students, the tutor and a representative of the company.
+ProP, Student workbook page 8
+Appendix A: map of camping "Park Kuierpad".
+ProP, Student workbook page 9
+Appendix B: About the logfiles, delivered by PayPal.
+At certain moments PayPal will deliver a logfile to the organisation of the event with
+information about the deposits during the last period of time.
+Every logfile contains information about deposits. The number of deposits is 1000 or less.
+The structure of such a logfile is:
+An example of such a logfile is:
+<<bank-account number of the organization>>
+<<date and time of the start of this period>>
+<<date and time of the end of this period>>
+<<the number of deposits>>
+<<information of a deposit: its unique identity number, a space an
+amount of money>>
+<<information of a deposit: its unique identity number, a space an
+amount of money>>
+. . .
+. . .
+. . .
+<<information of a deposit: its unique identity number, a space an
+amount of money>>
+123456789
+2012/02/03/16:13:03
+2012/02/03/16:14:25
+8
+41356 25.00
+345 60.00
+73567 77.00
+244 12.50
+345 20.00
+3966 20.00
+61167 45.25
+644 50.00
+ProP, Student workbook page 10
+Appendix C: setup-document
+In a setup-document you need to explain the processes, the requirements, the design of the
+website and applications. Further it should contain some decisions you made.
+It should contain:
+- Title page
+o Title, student names, group name or id, date
+- Table of contents
+- Preface
+o Short introduction of the document and a description of its chapters
+- Client
+o Brief description of the client and the agreements with the client
+- Processes
+o Description of the process of enquiring, enrolling, paying and actually visiting the
+event. Use an example e.g. some friends are interested in visiting a festival. They
+are using the internet to find such an event. Some enrol, some don’t. At the
+event itself: they have to get in. Are they staying over? How do they….. etc etc.
+o Also be specific what should happen in exceptional cases e.g. somebody drops
+out, doesn’t pay etc.
+- Functional requirements
+o An overview of all requirements grouped by application.
+o Make a so called MoSCoW list to specify which requirements you’re going to
+implement and which not.
+- User interface
+o Brief description of the use interface.
+o
+ProP, Student workbook page 11
+Appendix D: Process report
+It should contain:
+- Title page
+o Title, student names, group name or id, date
+- Table of contents
+- Preface
+o Short introduction of the document and a description of its chapters.
+- For each week:
+o Planned activities
+o Performed actitivties
+o Completed activities
+o Agreements (violated?, changed?, new?)
+o Problems and challenges
+o Solutions and decisions
+o Extra achieved / completed
+o Table with activities and hours spend per group member
+- For every group member: An individual reflection (what did you learn? Why is it a good
+or bad project for you? What would you do better next project?)
+- Appendix A: Agendas en minutes, Action lists
+- Appendix B: Project plan
+- Appendix C: Peer-reviews
+- Appendix D: Report of the interview with the client
+- Appendix E: Hours worked overview per group member
+ProP, Student workbook page 12
+Appendix E: Group work!
+One of the most important skills you’ll have to master during your study at Fontys University
+ICT College is to collaborate, work together in a group. In this appendix you’ll find some tips
+regarding working in a project group. Read this information carefully in the first week of your
+project and check regularly during the rest of the semester if you’re really functioning as a
+group member.
+You’ll have to learn that you can achieve more as a group then alone. But collaboration will not
+come naturally! You’ll have to make agreements with your group members and respect each
+other.
+Preparation
+Divide the different rolls and tasks and make a time schedule. Try to finish this in week 1, and
+deliver to your tutor!
+- Who is the chairman at the meetings?
+- Who takes notes/minutes?
+- Who monitors the schedule (process)?
+- Make a division of tasks with deadlines.
+- Agree on communication within the group.
+- Agree on a how you going to make decisions in the group
+- Make a schedule!
+Working…..
+- Honour all agreements you made!
+- Make sure you have (and keep) the same view on what and how to do your tasks.
+- Be a responsible group member: You are responsible for your task!
+- The burden of the end responsibility is for the whole group.
+- Make sure you communicate! Keep each other informed.
+- Give feedback to each other so you can improve.
+- When giving feedback on a product you’re evaluating the product not the person
+himself.
+- Ask feedback of your tutor in case you are stuck in the project for whatever reason
+Communication
+- Listen to each other
+o Do not interrupt: let people finish their talk
+o If you don’t understand then ask for clarification: Who, what, where, how…
+o Take each other’s feelings into consideration
+ProP, Student workbook page 13
+- Give proper feedback
+o Use constructive criticism
+o Only give feedback with the intention of improving
+o Be specific.
+o Respect ones opinion and be polite!
+- Receiving feedback
+o Do not hide in defence but try to reflect and use it for the better
+o Ask for clarification if necessary
+o Respect ones opinion and be polite!
+- Difference of opinion
+o Talk! With respect for each other’s opinion.
+o Investigate the matter: start with your common goal and subjects you do agree
+upon.
+o Ask your tutor to mediate.
+Roles within a project group
+Below you’ll find a list of possible roles with their tasks.
+- Project leader
+o The initiator of the project
+o Has an overview, actual status of the project
+o Divides the tasks among the group members
+o Makes sure everybody understands what to do
+o Checks progress
+o If necessary adjusts the schedule
+o First contact to the client
+- Secretary
+o Responsible for the process report
+o Arranges appointments
+o Makes note of agreements
+o Responsible for all project documentation
+o Together with the project leader responsible for the weekly agenda and minutes
+o Keeps all group members hours worked overview
+- Quality manager
+o Responsible for the quality of the code and comments
+o Responsible for the designs
+ProP, Student workbook page 14
+o Agrees upon an style of coding and guards that
+o Guards the consistency between design and implementation
+o Implements a VCS preferably in svn or Git
+o Guards the requirements and their implementation
+- Chairman
+- Minute taker
+What to expect of the tutor (Coach)?
+- Supporting your group in any question you have
+- Time needed, if requested in a fair time to respond
+- Review documents and products in progress
+- For feedback at any time you need it
+- Objective feedback from coach initiated by the coach at any time
+- Support in case of issues or any other problems
+Success to all!!! 

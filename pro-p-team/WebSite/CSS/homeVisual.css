@@ -1,0 +1,470 @@
+body {
+    background-image: url("../Images/OverwatchBG.jpg");
+    background-position: fixed;
+    font-family: 'Mogra', cursive;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+.videostyle {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+.navImage {
+    float: left;
+    width: 300px;
+    height: 180px;
+    margin-top: -80px;
+}
+
+.navImage:hover {
+    width: 340px;
+    height: 180px;
+}
+
+
+.center {
+    position: relative;
+    width: 40%;
+    height: 720px;
+    text-decoration: none;
+}
+
+.special {
+    width: 550px;
+    position: sticky;
+    text-decoration: none;
+}
+
+.special:hover {
+    text-decoration: none;
+}
+
+.navCenterImage1 {
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    text-decoration: none;
+}
+
+.navCenterImage2 {
+    position: absolute;
+    left: 150px;
+    width: 300px;
+    height: 310px;
+    text-decoration: none;
+}
+
+.navCenterImage2:hover {
+    width: 320px;
+    height: 345px;
+}
+
+.navCenterImage3 {
+    position: sticky;
+    height: 250px;
+    width: 700px;
+    margin-top: -55px;
+    margin-left: -60px;
+    text-decoration: none;
+}
+
+.mobile {
+    display: none;
+}
+
+nav {
+    top: 120px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 45px;
+    position: static;
+    text-align: center;
+    left: auto;
+    right: auto;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    left: auto;
+    right: auto;
+    position: fixed;
+    top: 0;
+}
+
+#position {
+    float: right;
+}
+
+.login {
+    float: right;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 250px;
+    margin-top: -4%;
+    z-index: 1;
+}
+
+.login:hover {
+    height: 220px;
+}
+
+.reg {
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 250px;
+    margin-top: -4%;
+    z-index: 1;
+}
+
+.reg:hover {
+    height: 220px;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    left: auto;
+    right: auto;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: auto;
+    right: auto;
+}
+
+footer > p {
+    font-size: 30px;
+	color:lightgoldenrodyellow;
+    position: relative;
+}
+
+.homeFoot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.hiden {
+    display: none;
+}
+
+.oasis {
+    display: none;
+}
+
+@media (max-width:1470px) {
+
+    .login {
+        float: right;
+        top: 0;
+        right: 0;
+        height: 200px;
+        width: 225px;
+        margin-top: -4%;
+        z-index: 1;
+    }
+
+    .login:hover {
+        height: 220px;
+    }
+
+    .reg {
+        position: relative;
+        float: right;
+        top: 0;
+        right: 0;
+        height: 200px;
+        width: 225px;
+        margin-top: -4%;
+        z-index: 1;
+    }
+
+    .reg:hover {
+        height: 220px;
+    }
+
+}
+
+@media (max-width:1391px) {
+    .center {
+        position: relative;
+        width: 40%;
+        height: 720px;
+        text-decoration: none;
+    }
+
+.special {
+        width: 500px;
+        position: sticky;
+        text-decoration: none;
+    }
+
+.special:hover {
+        text-decoration: none;
+    }
+
+.navCenterImage1 {
+        top: 0;
+        left: auto;
+        right: auto;
+        width: 400px;
+        height: 350px;
+        position: relative;
+        text-decoration: none;
+    }
+
+.navCenterImage2 {
+        position: absolute;
+        left: 100px;
+        width: 300px;
+        height: 310px;
+        text-decoration: none;
+    }
+
+.navCenterImage2:hover {
+        width: 320px;
+        height: 345px;
+    }
+
+.navCenterImage3 {
+        position: sticky;
+        height: 250px;
+        width: 700px;
+        margin-top: -50px;
+        margin-left: -90px;
+        text-decoration: none;
+    }
+
+    li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 1px 1px;
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width:1299px) {
+
+    .center {
+        position: relative;
+        width: 40%;
+        height: 720px;
+        text-decoration: none;
+    }
+
+    .special {
+        width: 369px;
+        position: sticky;
+        text-decoration: none;
+        margin-top: 50px;
+    }
+
+    .special:hover {
+        text-decoration: none;
+    }
+
+    .navCenterImage1 {
+        top: 0;
+        left: auto;
+        right: auto;
+        width: 350px;
+        height: 325px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .navCenterImage2 {
+        position: absolute;
+        left: 60px;
+        width: 250px;
+        height: 275px;
+        text-decoration: none;
+    }
+
+    .navCenterImage2:hover {
+        width: 290px;
+        height: 300px;
+    }
+
+    .navCenterImage3 {
+        position: sticky;
+        height: 225px;
+        width: 600px;
+        margin-top: -50px;
+        margin-left: -100px;
+        text-decoration: none;
+    }
+
+    li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 1px 1px;
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width:1280px) {
+
+    .center {
+        display: none;
+    }
+
+    .special {
+        display: none;
+    }
+
+    .hiden {
+        display:inline-table;
+        vertical-align: middle;
+    }
+
+    nav {
+        margin-top: 250px;
+    }
+
+    li a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .oasis {
+        width: 998px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media (max-width:1025px) {
+
+    .center {
+        display: none;
+    }
+
+    .special {
+        display: none;
+    }
+
+    .hiden {
+        display:inline-table;
+        vertical-align: middle;
+    }
+
+    nav {
+        margin-top: 250px;
+    }
+
+    li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .oasis {
+        width: 998px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width:998px) {
+
+    nav {
+        display: none;
+    }
+
+    .mobile {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .mobile > li {
+        width: 100%;
+        background: #fff;
+        opacity: 0.5;
+        border: 1px solid .5;
+    }
+
+    .reg {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .navImage {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+    .oasis {
+        display: none;
+    }
+
+}

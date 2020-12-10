@@ -1,0 +1,11 @@
+Extra features: 
+Ticket 
+RFID Scanner
+QR code 
+Aestetics
+A lot of food types and u can customize your coffee for example
+Autentication for workers to log in and use every app
+Big buttons for easy use
+PowerPoint presentation
+Add employees in adminstration
+TCP connection between certain apps
